@@ -26,10 +26,10 @@ public class AppController {
 	@Autowired
 	PaysService paysService;
 	
-	@RequestMapping("indexx")
-	public String viewHomePage () {
-		return "index";
-	}
+	//@RequestMapping("indexx")
+	//public String viewHomePage () {
+	//	return "index";
+	//}
 	
 	@RequestMapping("/updatePays")
 	public String updatePays(@ModelAttribute("Pays") Pays pays,ModelMap modelMap) 

@@ -26,10 +26,10 @@ public class ContinentController {
 	@Autowired
 	PaysService paysService;
 	
-	@RequestMapping("rootTesting")
-	public String viewHomePage () {
-		return "index";
-	}
+	//@RequestMapping("rootTesting")
+	//public String viewHomePage () {
+	//	return "index";
+	//}
 
 	@RequestMapping("/ListeContinent")
 	public String listeContinent(ModelMap modelMap,
