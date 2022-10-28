@@ -110,6 +110,11 @@ public class PaysServiceImpl implements PaysService {
 		// TODO Auto-generated method stub
 		return paysRepository.findByNomPays(Name);
 	}
+	@Override
+	public List<Pays> findByContinentIdCat(Long id) {
+		// return produitRepository.findByCategorieIdCat(id);
+		return paysRepository.findByContinentIdCat(id);
+	}
 	
 
 }

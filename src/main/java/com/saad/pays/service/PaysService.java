@@ -35,5 +35,7 @@ public interface PaysService {
 	Page<Continent> getAllContinentParePAge(int page, int size);
 	
 //	List<Pays> findByNomPaysLike(String nom);
+	
+	List<Pays> findByContinentIdCat(Long id);
 
 }
