@@ -1,4 +1,4 @@
-package com.saad.pays;
+package com.saad.conference;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;

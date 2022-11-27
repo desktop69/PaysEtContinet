@@ -1,4 +1,4 @@
-package com.saad.pays;
+package com.saad.conference;
 
 
 import java.util.Date;
@@ -8,9 +8,9 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.saad.pays.entities.Continent;
-import com.saad.pays.entities.Pays;
-import com.saad.pays.repos.PayRepository;
+
+import com.intg.conference.repos.ConferenceRepository;
+import com.intg.conference.entities.Conference;
 
 
 
@@ -19,18 +19,14 @@ import com.saad.pays.repos.PayRepository;
 class SpringfinalprojectApplicationTests {
 
 	@Autowired
-	private PayRepository payRepository;
+	private ConferenceRepository payRepository;
 	
-	@Test
-	public void testCreateProduit() {
-	Pays prod = new Pays(null, "la france", "5000", 0, null);
-	payRepository.save(prod);
-	}
+	
 	
 	@Test
 	public void testFindPay()
 	{
-	Pays p = payRepository.findById(1L).get();
+	Conference p = payRepository.findById(1L).get();
 
 	System.out.println(p);
 	}
@@ -38,8 +34,8 @@ class SpringfinalprojectApplicationTests {
 	@Test
 	public void testListerTousProduits()
 	{
-	List<Pays> prods = payRepository.findAll();
-	for (Pays p : prods)
+	List<Conference> prods = payRepository.findAll();
+	for (Conference p : prods)
 	{
 	System.out.println(p);
 	}
